@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Author - Song</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="../style.css" rel="stylesheet">
+    <script>
+    $("[data-toggle=popover]").popover();
+    </script>
+
+    
+</head>
+
+<body>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Sangbog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Collections</a>
+                        </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <!-- TODO: If the chords are hidden, it should say "Show chords".-->
+                    <button style="margin-right:.5em" class="btn btn-outline-info my-2 my-sm-0">Hide chords</button>
+                    <a href="SongCorrection.html" style="margin-right:.5em" class="btn btn-outline-info my-2 my-sm-0">Suggest correction</a>
+                    <!--
+                        TODO: Check if we can implement searching
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    -->
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+
+        <h1>I mellem lyse strande</h1>
+
+        <div id="song-info">
+            <div class="row">
+                <div class="col">
+                    Artist: Laus Høybye
+                </div>
+                <div class="col">
+                    Composer: Bjarne Skov Sporring
+                </div>
+                <div class="col">
+                    Lyricist: Aner det ikke
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <details>
+                        <summary>Categories</summary>
+                        <ul>
+                            <li>Sommer</li>
+                            <li>Rolig</li>
+                        </ul>
+                    </details>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    <details>
+                        <summary>Tags</summary>
+                        <ul>
+                            <li>DetDansk</li>
+                            <li>IkkeFransk</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <p class="chordlines">
+                <span class="chordline">
+                    <strong><span>[</span>Dm<span>]</span></strong>Lagt her så
+                    <strong><span>[</span>C/D<span>]</span></strong>frit imellem
+                    <strong><span>[</span>Bb/D<span>]</span></strong>lyse
+                    <strong><span>[</span>C/D<span>]</span></strong>strande
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Gm7<span>]</span></strong>favnen
+                    <strong><span>[</span>F/A<span>]</span></strong>åben imod
+                    <strong><span>[</span>Bb<span>]</span></strong>havets
+                    <strong><span>[</span>C(sus4)<span>]</span></strong>blå
+                    <!-- If an extra chord is added at the end of a line,
+                    It should have a margin left of 4em added.-->
+                    <strong style="margin-left:4em"><span>[</span>C<span>]</span></strong>
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Dm<span>]</span></strong>Lagt her så
+                    <strong><span>[</span>C/D<span>]</span></strong>frit imellem
+                    <strong><span>[</span>Bb/D<span>]</span></strong>lyse
+                    <strong><span>[</span>C/D<span>]</span></strong>strande
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Gm7<span>]</span></strong>favnen
+                    <strong><span>[</span>F/A<span>]</span></strong>åben imod
+                    <strong><span>[</span>Bb<span>]</span></strong>havets
+                    <strong><span>[</span>C(sus4)<span>]</span></strong>blå
+                    <strong style="margin-left:4em"><span>[</span>C<span>]</span></strong>
+                </span>
+            </p>
+        </div>
+
+        <div class="d-flex justify-content-center">
+
+            <p class="chordlines chorus">
+                <span class="chordline">
+                    <strong><span>[</span>Dm<span>]</span></strong>Lagt her så
+                    <strong><span>[</span>C/D<span>]</span></strong>frit imellem
+                    <strong><span>[</span>Bb/D<span>]</span></strong>lyse
+                    <strong><span>[</span>C/D<span>]</span></strong>strande
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Gm7<span>]</span></strong>favnen
+                    <strong><span>[</span>F/A<span>]</span></strong>åben imod
+                    <strong><span>[</span>Bb<span>]</span></strong>havets
+                    <strong><span>[</span>C(sus4)<span>]</span></strong>blå
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Dm<span>]</span></strong>Lagt her så
+                    <strong><span>[</span>C/D<span>]</span></strong>frit imellem
+                    <strong><span>[</span>Bb/D<span>]</span></strong>lyse
+                    <strong><span>[</span>C/D<span>]</span></strong>strande
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Gm7<span>]</span></strong>favnen
+                    <strong><span>[</span>F/A<span>]</span></strong>åben imod
+                    <strong><span>[</span>Bb<span>]</span></strong>havets
+                    <strong><span>[</span>C(sus4)<span>]</span></strong>blå
+                </span>
+            </p>
+        </div>
+        <div class="d-flex justify-content-center">
+
+            <p class="chordlines">
+                <span class="chordline">
+                    <strong><span>[</span>Dm<span>]</span></strong>Lagt her så
+                    <strong><span>[</span>C/D<span>]</span></strong>frit imellem
+                    <strong><span>[</span>Bb/D<span>]</span></strong>lyse
+                    <strong><span>[</span>C/D<span>]</span></strong>strande
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Gm7<span>]</span></strong>favnen
+                    <strong><span>[</span>F/A<span>]</span></strong>åben imod
+                    <strong><span>[</span>Bb<span>]</span></strong>havets
+                    <strong><span>[</span>C(sus4)<span>]</span></strong>blå
+                    <strong style="margin-left:4em"><span>[</span>C<span>]</span></strong>
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Dm<span>]</span></strong>Lagt her så
+                    <strong><span>[</span>C/D<span>]</span></strong>frit imellem
+                    <strong><span>[</span>Bb/D<span>]</span></strong>lyse
+                    <strong><span>[</span>C/D<span>]</span></strong>strande
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Gm7<span>]</span></strong>favnen
+                    <strong><span>[</span>F/A<span>]</span></strong>åben imod
+                    <strong><span>[</span>Bb<span>]</span></strong>havets
+                    <strong><span>[</span>C(sus4)<span>]</span></strong>blå
+                    <strong style="margin-left:4em"><span>[</span>C<span>]</span></strong>
+                </span>
+            </p>
+        </div>
+        <div class="d-flex justify-content-center">
+
+            <p class="chordlines chorus">
+                <span class="chordline">
+                    <strong><span>[</span>Dm<span>]</span></strong>Lagt her så
+                    <strong><span>[</span>C/D<span>]</span></strong>frit imellem
+                    <strong><span>[</span>Bb/D<span>]</span></strong>lyse
+                    <strong><span>[</span>C/D<span>]</span></strong>strande
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Gm7<span>]</span></strong>favnen
+                    <strong><span>[</span>F/A<span>]</span></strong>åben imod
+                    <strong><span>[</span>Bb<span>]</span></strong>havets
+                    <strong><span>[</span>C(sus4)<span>]</span></strong>blå
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Dm<span>]</span></strong>Lagt her så
+                    <strong><span>[</span>C/D<span>]</span></strong>frit imellem
+                    <strong><span>[</span>Bb/D<span>]</span></strong>lyse
+                    <strong><span>[</span>C/D<span>]</span></strong>strande
+                </span> <br>
+                <span class="chordline">
+                    <strong><span>[</span>Gm7<span>]</span></strong>favnen
+                    <strong><span>[</span>F/A<span>]</span></strong>åben imod
+                    <strong><span>[</span>Bb<span>]</span></strong>havets
+                    <strong><span>[</span>C(sus4)<span>]</span></strong>blå
+                </span>
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Song editor: martinmch</span>
+        </div>
+    </footer>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
