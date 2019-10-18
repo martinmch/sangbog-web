@@ -20,7 +20,47 @@
   </url>
   
   <url>
-    <loc>http://example.org/lars-lilholt/</loc>
+    <loc>http://example.org/categories/glad/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/glad/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/songs/imellem-lyse-strande-copy/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/songs/imellem-lyse-strande/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/artists/lars-lilholt/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/sommer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/sommer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/songs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/strand/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/strand/</loc>
   </url>
   
   <url>

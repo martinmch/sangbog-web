@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ViSynger</title>
-    <link>http://example.org/</link>
-    <description>Recent content on ViSynger</description>
+    <title>sommer on ViSynger</title>
+    <link>http://example.org/tags/sommer/</link>
+    <description>Recent content in sommer on ViSynger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.org/tags/sommer/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>404</title>
-      <link>http://example.org/404/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/404/</guid>
-      <description>test</description>
-    </item>
     
     <item>
       <title>I mellem lyse strande</title>
@@ -35,32 +26,6 @@
       
       <guid>http://example.org/songs/imellem-lyse-strande/</guid>
       <description>[Dm]Lagt her så[C/D]frit imellem[Bb/D]lyse[C/D]strande [Gm7]favnen[F/A]åben imod[Bb]havets[C(sus4)]blå[C] [Dm]Lagt her så[C/D]frit imellem[Bb/D]lyse[C/D]strande [Gm7]favnen[F/A]åben imod[Bb]havets[C(sus4)]blå[C][Dm]Lagt her så[C/D]frit imellem[Bb/D]lyse[C/D]strande [Gm7]favnen[F/A]åben imod[Bb]havets[C(sus4)]blå [Dm]Lagt her så[C/D]frit imellem[Bb/D]lyse[C/D]strande [Gm7]favnen[F/A]åben imod[Bb]havets[C(sus4)]blå[Dm]Lagt her så[C/D]frit imellem[Bb/D]lyse[C/D]strande [Gm7]favnen[F/A]åben imod[Bb]havets[C(sus4)]blå[C] [Dm]Lagt her så[C/D]frit imellem[Bb/D]lyse[C/D]strande [Gm7]favnen[F/A]åben imod[Bb]havets[C(sus4)]blå[C][Dm]Lagt her så[C/D]frit imellem[Bb/D]lyse[C/D]strande [Gm7]favnen[F/A]åben imod[Bb]havets[C(sus4)]blå [Dm]Lagt her så[C/D]frit imellem[Bb/D]lyse[C/D]strande [Gm7]favnen[F/A]åben imod[Bb]havets[C(sus4)]blå</description>
-    </item>
-    
-    <item>
-      <title>Lars Lilholt</title>
-      <link>http://example.org/artists/lars-lilholt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/artists/lars-lilholt/</guid>
-      <description>&lt;p&gt;Band fra &amp;hellip;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Overview</title>
-      <link>http://example.org/overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/overview/</guid>
-      <description>A general overview of the statistics of this website.
-Git commit hash: 67c7f73
-Latest 5 commits
- CHASH - CMSG CHASH - CMSG CHASH - CMSG CHASH - CMSG CHASH - CMSG  Number of songs: songCount
-Number of artists: artistCount
-Number of songs with chords: chordedSongCount
-Number of categories: catCount
-Number of tags: tagCount
-Contributor graph (y: amount of songs contributed, x : discrete users) bar plot</description>
     </item>
     
   </channel>
