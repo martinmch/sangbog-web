@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+    <div id="myCarousel" class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="first-slide" style="opacity: 0.2" src="img/billede.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <h1>Stay a while, and listen.</h1>
+                        <p>
+                            Welcome to Sangbog! An online archive of danish songs and their chords.
+                            This site is maintained by a group of song enthusiasts. The song archive
+                            is maintained using git. If you'd like to add a song, create a
+                            push request at GITLINK.
+                        </p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Subscribe to newsletter</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marketing messaging and featurettes
+      ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+        <h2>Contributors</h2>
+        <div class="row">
+            {{ range $.Site.Data.contributors }}
+            {{ partial "contributor.html" . }}
+            {{ end }}
+        </div>
+    </div><!-- /.container -->
+
+{{ end }}

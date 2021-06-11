@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{- partial "navbar.html" . -}}
+        <div class="container marketing">
+          <h1 style="margin-top:1em">{{.Title}}</h1>
+      
+          {{.Content}}
+          {{ range .Pages.GroupByParam "Artist"}}
+          <details>
+            <summary>{{ .Key }}</summary>
+            {{ range .Pages }}
+            <li style="list-style-type: none;">
+                    <a href="{{.Permalink}}">{{.Title}}</a>
+                {{ with .Param "hasChords" }}
+                (with chords)
+                {{ end }}
+            </li>
+            {{ end }}
+          </details>
+      {{ end }}
+{{ end }}

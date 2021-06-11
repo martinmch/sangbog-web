@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main role="main" class="container">
+    <h1 style="margin-top:1em">{{.Title}}</h1>
+    {{.Content}}
+    <!-- TODO: Create archetype with artist name-->
+    
+
+    <h3>Track listing:</h3>
+    {{ range where .Site.RegularPages ".Params.artist" "eq" .Title }}
+          <a href="{{.Permalink}}">{{.Title}}</a>
+          {{ with .Param "hasChords" }}
+          (with chords)
+          {{ end }}
+    {{ end }}
+</main>
+{{ end }}

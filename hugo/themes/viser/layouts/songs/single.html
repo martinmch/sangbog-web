@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+    {{ partial "navbar.html" . }}
+
+    <h1>{{ .Title }}</h1>
+    <div id="song-info">
+        <div class="row">
+            <div class="col">
+                <!-- Lyricist : Tekst -->
+                Lyricist: {{ .Params.lyricist }}
+            </div>
+            <div class="col">
+                <!-- Artist : Kunstner -->
+                Artist: {{ .Params.artist }}
+            </div>
+            <div class="col">
+                <!-- Composer : Musik -->
+                Composer: {{ .Params.composer }}
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col">
+                    {{ with .Params.categories }}
+                        <details>
+                            <summary>Categories</summary>
+                            <ul>
+                                {{ range . }}
+                                <li><a href="{{ "Categories" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+                                {{ end }}
+                            </ul>
+                    {{ else }}
+                            <p> No categories. </p>
+                    {{ end }}
+                </div>
+            
+
+            <!-- Empty col to create a row of three. This will match the info box above. -->
+            <div class="col"></div>
+
+            <div class="col">
+                    {{ with .Params.tags }}
+                        <details>
+                            <summary>Tags</summary>
+                            <ul>
+                                {{ range . }}
+                                <li><a href="{{ "tags" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+                                {{ end }}
+                            </ul>
+                    {{ else }}
+                            <p> No tags. </p>
+                    {{ end }}
+            </div>
+        </div>
+    </div>
+
+    {{ .Content | safeHTML }}
+
+    {{ partial "footer.html" . }}
+
+{{ end }}

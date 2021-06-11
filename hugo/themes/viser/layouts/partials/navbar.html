@@ -1,0 +1,39 @@
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/artists">Artists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/songs">Songs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/collections">Collections</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="/categories">Categories</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tags">Tags</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="/overview">Overview</a>
+                    </li>
+            </ul>
+        </div>
+        {{ with .Params.hasChords }}
+        <button style="margin-right:.5em" id="chordButton" class="btn btn-outline-info my-2 my-sm-0" onClick="toggleChords();">
+            Hide chords
+        </button>
+        {{ end }}
+    </nav>
+</header>

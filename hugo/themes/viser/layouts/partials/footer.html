@@ -1,0 +1,10 @@
+    <footer class="footer">
+        <div class="container">
+                {{ with .Params.authors }}
+                <sp`an class="text-muted">Song contributors{{if gt (len .) 1}}s{{end}}:
+                        {{ range $index, $value := . }}
+                            {{ . }}{{ if (eq $index 0) }},{{ end }}{{ end }}.
+                </span>
+                {{ end }}
+        </div>
+    </footer>
