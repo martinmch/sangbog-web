@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #   readChordProFile :: string -> string List
 def readChordProFile(filename):
     with open(filename) as f:
@@ -12,26 +13,24 @@ class ChordProFile:
         self.categories = []
 
 
-def parseChordPro(linesOfFile)
+def parseChordPro(linesOfFile):
     linesWithoutAttributes, attributes = parseAttributes(linesOfFile)
     part = []
     isChorus = False
     isVerse = False
     for line in linesWihtoutAttributes:
- false       if line is "{soc}" or line is "{start_of_chorus}"
+        if line is "{soc}" or line is "{start_of_chorus}"
             isChorus = True
             isVerse = False
             continue
         if line is "{eoc}"
+            isChorus = False
+            isVerse = False
+            continue
     
 
 filename = "test.crd"
 lines = readChordProFile(filename)
 chordProFile = parseChordPro(lines)
 markdownFile = ConvertChordProToMarkdown(chordProFile)
-
-
-
-
-
 
